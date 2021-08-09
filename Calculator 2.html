@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- Hello World, A small survey form in html - Manzoo Ahmed -->
+<html>
+    <head>
+	    <meta charset="UTF-8">
+		<title>Customer Satisfactory Survey</title>
+		<h4 id="top">By Manzoo Ahmed</h4>
+		<center><img src="https://www.picgroupinc.com/wp-content/uploads/2015/10/Career-Header2-1500x200.png" width="1500" height="200" alt="A picture of a crab"></center>
+	</head>
+	<body>
+	<div style="background-color:pink;width:1500px;">
+    
+	    <form>
+	    <h1><p style="color:blue";>Customer Satisfactory Survey</h1></p>
+		<hr >
+		<label for "username" > </label><input id="username" type="text" name="username" style="height:20px; width:120px; vertical-align: middle;" placeholder="First Name">
+		<label for "username" > </label><input id="username" type="text" name="username" style="height:20px; width:120px; vertical-align: middle;" placeholder="Last Name">
+		<label for "username" > </label><input id="username" type="text" name="username" style="height:20px; width:200px; vertical-align: middle;" placeholder="Email Address">
+		<input type="reset" style="background-color:green" value="Clear The Form">
+		<input type="submit" style="background-color:yellow" value="Login">
+		
+		<p>Here's the list of subjects. Select any one:</p>
+		<form>
+		<select name = "dropdown">
+		<option value = "Computer Architecture" selected>Computer Architecture</option>
+		<option value = "Java">Java</option>
+		<option value = "Discrete Mathematics">Discrete Mathematics</option>
+		</select>
+		</form>
+		    <h4>Gender</h4>
+		    <label for="on">Male <input id="on" type="radio" name="onOff" value="on" style="height:25px; width:25px; vertical-align: middle;"></label>
+		    <br>
+		    <label for="on">Female <input id="on" type="radio" name="onOff" value="on" style="height:25px; width:25px; vertical-align: middle;"></label>
+		    <br>
+		    <label for="on">N/A <input id="on" type="radio" name="onOff" value="on" style="height:25px; width:25px; vertical-align: middle;"></label>
+		    <br>
+		</form>
+		<form name="main_form" action="" method="GET">
+		    <p><h4>Age</h4></p>
+		    
+		    <label for="off">18-24 <input id="off" type="radio" name="onOff" value="off" style="height:25px; width:25px; vertical-align: middle;"></label>
+		    <br>
+		    <label for="off">25-34 <input id="off" type="radio" name="onOff" value="off" style="height:25px; width:25px; vertical-align: middle;"></label>
+		    <br>
+		    <label for="off">35-44 <input id="off" type="radio" name="onOff" value="off" style="height:25px; width:25px; vertical-align: middle;"></label>
+		    <br>
+		</form>
+	
+	    
+		<p><h4>Location (County)</h4></p>
+		<select name="country" style="height:30px; width:130px; vertical-align: middle;font-size: 15px">
+		    <option value="Baringo">Baringo</option>
+	            <option value="Bomet">Bomet</option>
+		    <option value="Bungoma">Bungoma</option>
+		    <option value="Baringo">Baringo</option>
+		    <option value="Busia">Busia</option>
+		    <option value="Elgeyo Marakwet">Elgeyo Marakwet</option>
+                    <option value="Embu">Embu</option>
+                    <option value="Garissa">Garissa</option>
+                    <option value="Homa Bay">Homa Bay</option>
+                    <option value="Isiolo">Isiolo</option>
+                    <option value="Kajiado">Kajiado</option>
+                    <option value="Kakamega">Kakamega</option>
+                    <option value="Kericho">Kericho</option>
+                    <option value="Kiambu">Kiambu</option>
+                    <option value="Kilifi">Kilifi</option>
+                    <option value="Kirinyaga">Kirinyaga</option>
+                    <option value="Kisii">Kisii</option>
+                    <option value="Kisumu">Kisumu</option>
+                    <option value="Kitui">Kitui</option>
+                    <option value="Kwale">Kwale</option>
+                    <option value="Laikipia">Laikipia</option>
+                    <option value="Lamu">Lamu</option>
+                    <option value="Machakos">Machakos</option>
+                    <option value="Makueni">Makueni</option>
+                    <option value="Mandera">Mandera</option>
+                    <option value="Marsabit">Marsabit</option>
+                    <option value="Meru">Meru</option>
+                    <option value="Migori">Migori</option>
+                    <option value="Mombasa">Mombasa</option>
+                    <option value="Murang'a">Murang'a</option>
+                    <option value="Nairobi City">Nairobi City</option>
+                    <option value="Nakuru">Nakuru</option>
+                    <option value="Nandi">Nandi</option>
+                    <option value="Narok">Narok</option>
+                    <option value="Nyamira">Nyamira</option>
+                    <option value="Nyandarua">Nyandarua</option>
+                    <option value="Nyeri">Nyeri</option>
+                    <option value="Samburu">Samburu</option>
+                    <option value="Siaya">Siaya</option>
+                    <option value="Taita Taveta">Taita Taveta</option>
+                    <option value="Tana River">Tana River</option>
+                    <option value="Tharaka-Nithi">Tharaka-Nithi</option>
+                    <option value="Trans Nzoia">Trans Nzoia</option>
+                    <option value="Turkana">Turkana</option>
+                    <option value="Uasin Gishu">Uasin Gishu</option>
+                    <option value="Vihiga">Vihiga</option>
+                    <option value="Wajir">Wajir</option>
+                    <option value="West Pokot">West Pokot</option>
+           		
+		</select>
+		
+		<p><h4>How satisfied were you with our service?</h4></p>
+
+        <form action="" method="GET">
+            <select name="selection" style="height:30px; width:200px; vertical-align: middle;font-size: 15px;">
+              
+              <option value="not satisfied">Not Satisfied</option>
+              <option value="satisfied">Satisfied</option>
+              <option value="very satified">Very Satisfied</option>
+             
+            </select>
+        </form>		
+
+		
+		<form name="main_form" action="" method="POST">
+		
+		<p><h4>Looking at the price of the Kaduda 4G phone, is the price high, low or about right?</h4></p>
+		    
+		<label for="on">Low <input id="on" type="radio" name="onOff" value="on" style="height:25px; width:25px; vertical-align: middle; font-size: 15px;"></label>
+		<br>
+		<label for="on">About right <input id="on" type="radio" name="onOff" value="on" style="height:25px; width:25px; vertical-align: middle; font-size: 15px;"></label>
+		<br>
+		<label for="on">High <input id="on" type="radio" name="onOff" value="on" style="height:25px; width:25px; vertical-align: middle; font-size: 15px;"></label>
+		<br>
+		</form>
+		
+		<p><h4>Is this the first time you have used our service?</h4></p>
+		<select name="selection" style="height:30px; width:130px; vertical-align: middle; font-size: 15px">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+		
+		
+		<p><h4>If you have ever used our service before, how many times in the past year?
+		<textarea name="message" style="height:26px; width:50px; vertical-align: middle;"></textarea>
+		
+		<p><h4>Would you recommend us to a friend?<h4></p>
+		<select name="selection" style="height:30px; width:130px; vertical-align: middle; font-size: 15px">
+		    <option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+		<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
+<h4>Switch</h4>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<h1><p style="color:blue;"> Thank you for your time</h1></p>
+
+	</div>
+	<a href="#top"> Go back to the top</a>
+
+<style>
+    
+    body {
+      background: linear-gradient(to right,red,blue);
+      
+    }
+
+    .buttons{
+      width:80px;
+      height:80px;
+      font-size:32px;
+      border: none;
+      box-shadow: 5px 5px 50px black;
+      color:white;
+      background:#222426;
+      
+    }
+
+    .number{
+      width:80px;
+      height:80px;
+      font-size:32px;
+      border: none;
+      box-shadow: 5px 5px 50px black;
+      color:white;
+      background:#222426;
+      
+    }
+
+
+    #equal{
+      height:80px;
+    }
+    #textview{
+      width:300px;
+      height:65px;
+      text-align: right;
+      font-size:32px;
+      padding-right: 30px;
+      margin-left: 3px;
+      box-shadow: 1px 1px 10px black;
+     
+    }
+    #container{
+        
+        margin:0 auto;
+        margin-top:50px;
+        
+        width:auto;
+     
+    }
+    .buttons:hover{
+        
+        background:#4e5256;
+    }
+
+    .number:hover{
+        background:#4e5256;
+    }
+
+    #equal{
+        background:#9e3d06;
+    }
+
+</style>
+  
+  <div id="container">
+    <input type="text" id="textview">
+    <table>
+      <tr>
+        <td><input class="buttons" type="submit" value="C" onclick = "clears()"></td>
+        <td><input class="buttons" type="submit" value="(" onclick = "a('(')"></td>
+        <td><input class="buttons" type="submit" value=")" onclick = "a(')')"></td>
+        <td><input class="buttons" type="submit" value="DEL" onclick = "del()"></td>
+      </tr>    
+        
+      <tr>
+        <td><input class="buttons" type="submit" value="7" onclick = "a(7)"></td>
+        <td><input class="buttons" type="submit" value="8" onclick = "a(8)"></td>
+        <td><input class="buttons" type="submit" value="9" onclick = "a(9)"></td>
+        <td><input class="buttons" type="submit" value="x" onclick = 'a("*")'></td>
+      </tr>
+      <tr>
+        <td><input class="buttons" type="submit" value="4" onclick = "a(4)"></td>
+        <td><input class="buttons" type="submit" value="5" onclick = "a(5)"></td>
+        <td><input class="buttons" type="submit" value="6" onclick = "a(6)"></td>
+        <td><input class="buttons" type="submit" value="/" onclick = 'a("/")'></td>
+      </tr>
+      <tr>
+        <td><input class="buttons" type="submit" value="1" onclick = "a(1)"></td>
+        <td><input class="buttons" type="submit" value="2" onclick = "a(2)"></td>
+        <td><input class="buttons" type="submit" value="3" onclick = "a(3)"></td>
+        <td><input class="buttons" type="submit" value="-" onclick = "a('-')"></td>
+        
+        
+      </tr>
+      
+      <tr>
+        <td><input class="number" type="submit" value="." onclick= "a('.')"></td>
+        <td><input class="buttons" type="submit" value="0" onclick = "a(0)"></td>
+        <td><input class="buttons" type="submit" value="=" id="equal" onclick = "equal()"></td>
+        <td><input class="buttons" type="submit" value="+" onclick = "a('+')"></td>
+        
+      </tr>
+     
+    </table>
+  </div>
+  
+  <script>
+      
+      function del(){
+          let del = document.querySelector("#textview").value.slice(0,-1);
+          document.querySelector("#textview").value = del;
+      }
+
+      
+      function clears (){
+          document.querySelector("#textview").value = "";
+      };
+         
+      function a(num){
+          document.querySelector("#textview").value = document.querySelector("#textview").value + num;
+     
+      };
+      
+      function equal(){
+          document.querySelector("#textview").value = eval(document.querySelector("#textview").value);
+          
+      };
+      
+
+    
+    
+ </script>
+</body>
+	<a href="#top"> Go back to the top</a>
+			
+</html>
