@@ -9,5 +9,6 @@ Github: Yuvrajchandra
 
 Calculator 2: Manzoo Ahmed
 
-Calculator 1 Preview:
+# Calculator 1 Preview:
+
 <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/06/Calculator-Rows-1.png?q=50&fit=crop&w=750&dpr=1.5">
