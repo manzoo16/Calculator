@@ -4,31 +4,124 @@
     <head>
 	    <meta charset="UTF-8">
 		<title>Calculator</title>
+<link rel="stylesheet" href="styles.css">
 		<h4 id="top">By Manzoo Ahmed</h4>
+<body>
+
 <style>
-    
-    body {
-      background: linear-gradient(to right,red,blue);
-      
-    }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body {
+      padding: 10px;
+      border-radius: 1em;
+      border: solid maroon 5px;;
+      height: 645px;
+      width: 339px;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+     }
+
+     #digital-clock {
+      background-color: #ff00ff;
+      border-radius: 5px;
+      width: 60%;
+      margin: auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     }
+
+</style>
+
+<div id = "digital-clock"> </div>
+
+
+<script>
+function Time() {
+
+  // Creating object of the Date class
+  var date = new Date();
+
+  // Get current hour
+  var hour = date.getHours();
+  // Get current minute
+  var minute = date.getMinutes();
+  // Get current second
+  var second = date.getSeconds();
+
+  // Variable to store AM / PM
+  var period = "";
+
+  // Assigning AM / PM according to current hour
+  if (hour >= 12) {
+      period = "PM";
+  } else {
+      period = "AM";
+  }
+
+  // Converting the hour in 12-hour format
+  if (hour == 0) {
+      hour = 12;
+  } else {
+      if (hour > 12) {
+          hour = hour - 12;
+      }
+  }
+
+  // Updating hour, minute, and second
+  // if they are less than 10
+  hour = update(hour);
+  minute = update(minute);
+  second = update(second);
+
+  // Adding time elements to the div
+  document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period;
+
+  // Set Timer to 1 sec (1000 ms)
+  setTimeout(Time, 1000);
+}
+
+// Function to update time elements if they are less than 10
+// Append 0 before time elements if they are less than 10
+function update(t) {
+  if (t < 10) {
+    return "0" + t;
+  }
+  else {
+    return t;
+  }
+}
+
+Time();
+</script>
+
+<style>
 
     .buttons{
+      padding: 5px;
+      border-radius: 5px;
       width:80px;
       height:80px;
       font-size:32px;
-      border: none;
-      box-shadow: 5px 5px 50px black;
+      border: solid black 0.5px;;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
       color:white;
       background:#222426;
       
     }
 
     .number{
+      padding: 5px;
+      border-radius: 5px;
       width:80px;
       height:80px;
       font-size:32px;
-      border: none;
-      box-shadow: 5px 5px 50px black;
+      border: solid black 0.5px;;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
       color:white;
       background:#222426;
       
@@ -58,19 +151,24 @@
     }
     .buttons:hover{
         
-        background:#4e5256;
+        background:#64278f;
     }
-
+    .button:active {
+     background: #e5e5e5;
+     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+     box-shadow: inset 0px 0px 5px #c1c1c1;
+    }
     .number:hover{
-        background:#4e5256;
+        background:#64278f;
     }
 
     #equal{
-        background:#9e3d06;
+        background:#64278f;
     }
 
 </style>
-  
+
   <div id="container">
     <input type="text" id="textview">
     <table>
@@ -113,8 +211,8 @@
     </table>
   </div>
   
-  <script>
       
+<script>
       function del(){
           let del = document.querySelector("#textview").value.slice(0,-1);
           document.querySelector("#textview").value = del;
