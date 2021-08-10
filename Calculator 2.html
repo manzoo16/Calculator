@@ -5,39 +5,72 @@
 	    <meta charset="UTF-8">
 		<title>Calculator</title>
 <link rel="stylesheet" href="styles.css">
-		<h4 id="top">By Manzoo Ahmed</h4>
+		
 <body>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Audiowide&effect=emboss");
+@import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
 
-body {
+.container {
+     position: relative;
+
+}
+
+.font-effect-emboss {
+  position: absolute;
+  top: 30px;
+  right: 480px;
+  font-size: 18px;
+  color: blue;
+}
+
+
+
+   #body {
       padding: 10px;
       border-radius: 1em;
       border: solid maroon 5px;;
-      height: 645px;
+      height: 585px;
       width: 339px;
       margin: auto;
-      background-color: #ffffff;
+      background-color: #48d1cc;
       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
      }
 
-     #digital-clock {
-      background-color: #ff00ff;
-      border-radius: 5px;
-      width: 60%;
-      margin: auto;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      font-family: 'Open Sans Condensed', sans-serif;
-      font-size: 20px;
-      text-align: center;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.font-effect-fire-animation {
+    color:blue;
+    font-family: Rancho;
+    font-size: 15px;
+    
+    
+    
+  }
+
+     background-color: #4169e1;
+     border-radius: 10px;
+     width: 35%;
+     margin: auto;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     font-family: "Audiowide", sans-serif;
+     font-size: 45px;
+     text-align: center;
+     color: red;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      }
 
-</style>
+  
 
-<div id = "digital-clock"> </div>
+</style>
+<div id="body">
+<div class="font-effect-fire-animation">
+<h4>By Manzoo Ahmed</h4>
+</div>
+
+
+
+<div class="font-effect-emboss" id = "digital-clock"></div>
 
 
 <script>
@@ -209,6 +242,7 @@ Time();
       </tr>
      
     </table>
+   </div>
   </div>
   
       
